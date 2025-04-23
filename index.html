@@ -13,6 +13,78 @@
     #output {
       margin-top: 2rem;
     }
+    .header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+    }
+    .container {
+      margin-top: -40px;
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .skills span {
+      background: #e0f7fa;
+      color: #00796b;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .project-card {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      padding: 1rem;
+      border-radius: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .project-card a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    .contact-info a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .resume-btn {
+      margin-top: 2rem;
+      background-color: #28a745;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      text-align: center;
+    }
+    .resume-btn:hover {
+      background-color: #218838;
+    }
   </style>
 </head>
 <body>
@@ -26,6 +98,22 @@
       <div class="mb-3">
         <label for="bio" class="form-label">Short Bio</label>
         <textarea class="form-control" id="bio" rows="2" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="linkedin" class="form-label">LinkedIn</label>
+        <input type="url" class="form-control" id="linkedin">
+      </div>
+      <div class="mb-3">
+        <label for="github" class="form-label">GitHub</label>
+        <input type="url" class="form-control" id="github">
+      </div>
+      <div class="mb-3">
+        <label for="education" class="form-label">Education (one per line)</label>
+        <textarea class="form-control" id="education" rows="3"></textarea>
       </div>
       <div class="mb-3">
         <label for="skills" class="form-label">Skills (comma separated)</label>
